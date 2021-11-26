@@ -1,0 +1,6 @@
+By using the URL for POST that was inside the userinterface.kt file, I inserted them onto Postman. First, I did the post option, then I used GET, and lastly used PUT. 
+The problem here is that the token used did not change when going from one URL to another. In the GET URL, the card was false for used, and then the used was 
+true for PUT. The token should have been changing and not permanent. I could leave this app open for days, and the token would have still been the same. 
+This way is a security issue since it is easier for a vulnerability to happen.
+
+To fix this solution, a different token should show up every time I want to use a different card. It is like a password, you want to remain secure. 
