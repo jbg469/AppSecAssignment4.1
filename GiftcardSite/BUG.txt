@@ -1,6 +1,7 @@
 By using the URL for POST that was inside the userinterface.kt file, I inserted them onto Postman. First, I did the post option, then I used GET, and lastly used PUT. 
 The problem here is that the token used did not change when going from one URL to another. In the GET URL, the card was false for used, and then the used was 
-true for PUT. The token should have been changing and not permanent. I could leave this app open for days, and the token would have still been the same. 
-This way is a security issue since it is easier for a vulnerability to happen.
+true for PUT. 
 
-To fix this solution, a different token should show up every time I want to use a different card. It is like a password, you want to remain secure. 
+The vulnerability is that the user is able to log in with a token and have access to someone else's card. 
+
+The card and account should be associated in the back-end to fix this solution. There need's to be more security on the site that matches these two things. That way, the user cannot make an account and use/exhaust someone else's information. Being an authenticated user does not mean a person is an authorized user, so the back-end should keep track of the permissions. Similar to how credit cards that are authorized are used. IP addresses can be used to limit API key access to certain IP addresses. 
